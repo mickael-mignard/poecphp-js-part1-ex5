@@ -7,6 +7,6 @@ function afficher(){
     var resultat = nombre1 * nombre2;
 
     alert(
-        "Résultat : " + resultat
+        "Résultat de la multiplication, après troncature du premier nombre : " + resultat
     )
     }
