@@ -2,16 +2,19 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <title>JS - Part1 - Ex5</title>
 </head>
 <body>
     <p>Saisir deux nombres à virgule :</p>
-    <label for="nombre1">Premier nombre : </label>
-    <input type="text" id="nombre1" name="nombre1" value=""><br>
+    <label for="number1">Premier nombre : </label>
+    <input type="text" id="number1" name="number1" value=""><br>
     <label for="prenom">Deuxième nombre : </label>
-    <input type="text" id="nombre2" name="nombre2" value=""><br>    
-    <input type="submit" value="Valider" onClick="afficher()">
+    <input type="text" id="number2" name="number2" value=""><br>    
+    <input type="submit" value="Valider" onClick="displayResult()"><br>
+
+    <span id="result"></span>
+    
+    <script src="js/script.js"></script>
 </body>
 </html>
