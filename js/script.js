@@ -7,8 +7,8 @@ document.querySelector('input[type="submit"]').addEventListener('click', display
   */
 function computeResult() {
     // Get inputs
-    let number1 = document.getElementById("number1").value;
-    let number2 = document.getElementById("number2").value;
+    let number1 = document.getElementById('number1').value;
+    let number2 = document.getElementById('number2').value;
 
     // Replace comma by point if necessary
     number1 = number1.replace(',', '.');
@@ -20,14 +20,14 @@ function computeResult() {
     }
 
     // Check if inputs represents decimal numbers. If not, script is stopped.
-    if ((number1.indexOf(".") == -1 || number1.indexOf(".") == number1.length - 1)
-        || (number2.indexOf(".") == -1 || number2.indexOf(".") == number2.length - 1)) {             
+    if ((number1.indexOf('.') == -1 || number1.indexOf('.') == number1.length - 1)
+        || (number2.indexOf('.') == -1 || number2.indexOf('.') == number2.length - 1)) {             
         return;
     }    
 
     // Truncate first input and compute result
     number1 = Math.trunc(number1);
-    return "Résultat = " +  number1 * number2;    
+    return '<strong>Résultat = ' +  number1 * number2 + '</strong>';    
 }
 
 
@@ -38,7 +38,7 @@ function displayResult(){
     let result = computeResult();
     let displaySpan = document.getElementById('result');
     if(result === undefined){
-        displaySpan.innerHTML = "Aucun résultat ! Saisissez deux nombres décimaux !"
+        displaySpan.innerHTML = '<strong>Aucun résultat ! Saisissez deux nombres décimaux !</strong>';
     }else{
         displaySpan.innerHTML = result;
     }    
@@ -55,8 +55,8 @@ function displayResult(){
 //  */
 // function computeResult() {
 //     // Get inputs
-//     let number1 = document.getElementById("number1").value;
-//     let number2 = document.getElementById("number2").value;
+//     let number1 = document.getElementById('number1').value;
+//     let number2 = document.getElementById('number2').value;
 
 //     // Replace comma by point if necessary
 //     number1 = number1.replace(',', '.');
@@ -69,7 +69,7 @@ function displayResult(){
 
 //     // Truncate first input and calculate result
 //     number1 = Math.trunc(number1);
-//     return "Résultat = " +  number1 * number2;     
+//     return '<strong>Résultat = ' +  number1 * number2 + '<strong>';     
 // }
 
 // /**
@@ -90,8 +90,8 @@ function displayResult(){
 //   */
 //  function computeResult() {
 //     // Get inputs
-//     let number1 = document.getElementById("number1").value;
-//     let number2 = document.getElementById("number2").value;
+//     let number1 = document.getElementById('number1').value;
+//     let number2 = document.getElementById('number2').value;
 
 //     // Replace comma by point if necessary
 //     number1 = number1.replace(',', '.');
@@ -105,5 +105,5 @@ function displayResult(){
 
 //     // Truncate first input and compute result
 //     number1 = Math.trunc(number1);
-//     return "Résultat = " +  number1 * number2;    
+//     return '<strong>Résultat = ' + number1 * number2 + '</strong>';    
 // }
